@@ -1,0 +1,23 @@
+digraph G{
+		fontname="kaiti"
+		fontsize=8
+		rankdir="BT"
+
+		node [ 
+		fontname = "kaiti"
+		fontsize = 8
+		shape = "record"
+		]
+
+		IDog [ 
+		label = "{
+				IDog||+wang() : void\l
+		}"]
+
+		Dog [ 
+		label = "{
+				Dog|+weight : int \l+height : int|+wang() : void \l
+		}"]
+
+		Dog -> IDog[arrowhead = "empty" style="dashed"]
+}

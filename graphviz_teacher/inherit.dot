@@ -1,0 +1,16 @@
+digraph G{
+	fontname = "kait"
+	rankdir = "BT"
+	fontsize = 8
+
+	node [ 
+	fontname = "kaiti"
+	fontsize = 8
+	shape = "record"
+	]
+
+	Dog [label = "{
+			Dog||+wang() : void \l
+	}"]
+	Animal -> Dog [arrowhead = "empty"]
+}

@@ -1,0 +1,53 @@
+digraph G{
+		fontname = "KaiTi"
+		fontsize = 12
+		rankdir = "BT"
+
+		node [
+		fontname = "KaiTi"
+		fontsize = 12
+		shape = "record"
+		]
+
+		Master [
+		label = "{
+				Master|Age: int\lArticl: String\lbackgroud: String|+teach() void\lstudy() void
+		}"]
+
+		Teacher [
+		label = "{
+				Teacher|Aget: int\lbackgroud: String|+teach() void
+		}"]
+		
+		Student [
+		label = "{
+				Student|Age: int\lName: String\lClass: int|+learn() void
+		}"]
+
+		IStudent [
+		label = "{
+				IStudent|+learn() void
+		}"]
+		
+		ITeacher [
+		label = "{
+				ITeacher|+teach() void
+		}"]
+
+		XiaoMing [
+		label = "{
+				XiaoMing|Age: int\lName: String\lClass String\lFather: String|+learn() void\lEat() void
+		}"]
+
+		XiaoMing -> Student [arrowhead = "empty"]
+		Student -> IStudent [style = "dashed" arrowhead = "empty"]
+		Teacher -> ITeacher [style = "dashed" arrowhead = "empty"]
+		Student -> Book [style = "dashed"]
+		Master -> Teacher [arrowhead = "empty"]
+		Teacher -> Book [style = "dashed"]
+		Teacher -> Course 
+		Student -> Course
+		Student -> Class [style="dashed" arrowhead="ediamond"]
+		Age -> Student [arrowhead = "diamond"]
+		Name -> Student [arrowhead = "diamond"]
+}

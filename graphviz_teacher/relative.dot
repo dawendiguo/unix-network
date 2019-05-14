@@ -1,0 +1,18 @@
+digraph G{
+		fontname = "KaiTi"
+	    fontsize = 10
+		rankdir = "BT"
+
+		node [
+		fontname = "KaiTi"
+		fontsize = 10
+		shape = "record"
+		]
+		
+		Teacher [
+		label = "{
+				Teacher||+course() : void\l
+		}"]
+
+		Teacher -> Course
+}

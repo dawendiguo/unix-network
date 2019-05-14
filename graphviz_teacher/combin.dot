@@ -1,0 +1,23 @@
+digraph G{
+		fontname = "KaiTi"
+		fontsize = 12
+		rankdir = "BT"
+
+		node [
+		fontname = "KaiTi"
+		fontsize = 12
+		shape = "record"
+		]
+
+		edge[
+		arrowhead = "diamond"
+		]
+
+		Head -> Human
+		LeftLeg -> Human
+		RightLeg -> Human
+		Eye -> Human
+		Hand -> Human
+		Think -> Human
+		 身体 -> Human
+}
